@@ -1,2 +1,2 @@
-InfyOm Laravel Scaffold Generator Core Bootstrap Templates
-===========================================================
+Core Bootstrap templates for InfyOm Laravel Generator
+======================================================
