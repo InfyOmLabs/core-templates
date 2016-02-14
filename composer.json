@@ -1,0 +1,26 @@
+{
+    "name": "infyomlabs/core-templates",
+    "description": "Core Bootstrap templates for InfyOm Laravel Generator",
+    "keywords": [
+        "laravel",
+        "generator",
+        "templates",
+        "bootstrap"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mitul Golakiya",
+            "email": "me@mitul.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "InfyOm\\CoreTemplates\\": "src/"
+        }
+    }
+}

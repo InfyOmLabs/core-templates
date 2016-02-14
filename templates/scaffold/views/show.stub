@@ -1,0 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+	 @include('$MODEL_NAME_PLURAL_CAMEL$.show_fields')
+</div>
+@endsection
