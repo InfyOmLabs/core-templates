@@ -13,7 +13,7 @@ class CoreTemplatesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../views', 'core-templates');
+        $this->loadViewsFrom(__DIR__.'/../views', 'core-templates');
     }
 
     /**
@@ -23,6 +23,5 @@ class CoreTemplatesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
     }
 }
