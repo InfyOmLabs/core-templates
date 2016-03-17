@@ -12,9 +12,9 @@
     @include('core-templates::common.errors')
 
     <div class="row">
-        {!! Form::open(['route' => '$MODEL_NAME_PLURAL_CAMEL$.store']) !!}
+        {!! Form::open(['route' => '$ROUTES_AS_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.store']) !!}
 
-            @include('$MODEL_NAME_PLURAL_CAMEL$.fields')
+            @include('$ROUTES_AS_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.fields')
 
         {!! Form::close() !!}
     </div>

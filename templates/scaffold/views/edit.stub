@@ -12,9 +12,9 @@
         @include('core-templates::common.errors')
 
         <div class="row">
-            {!! Form::model($$MODEL_NAME_CAMEL$, ['route' => ['$MODEL_NAME_PLURAL_CAMEL$.update', $$MODEL_NAME_CAMEL$->id], 'method' => 'patch']) !!}
+            {!! Form::model($$MODEL_NAME_CAMEL$, ['route' => ['$ROUTES_AS_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.update', $$MODEL_NAME_CAMEL$->id], 'method' => 'patch']) !!}
 
-            @include('$MODEL_NAME_PLURAL_CAMEL$.fields')
+            @include('$ROUTES_AS_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.fields')
 
             {!! Form::close() !!}
         </div>
