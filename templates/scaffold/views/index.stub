@@ -13,11 +13,7 @@
 
         <div class="clearfix"></div>
 
-        @if($$MODEL_NAME_PLURAL_CAMEL$->isEmpty())
-            <div class="well text-center">No $MODEL_NAME_PLURAL$ found.</div>
-        @else
-            @include('$ROUTES_AS_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.table')
-        @endif
+        @include('$ROUTES_AS_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.table')
         $PAGINATE$
     </div>
 @endsection
