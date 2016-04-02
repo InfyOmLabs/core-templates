@@ -13,16 +13,7 @@
                 serverSide: true,
                 ajax: '{!! route('$MODEL_NAME_PLURAL_CAMEL$.index') !!}',
                 columns: [
-                    { name: 'Title', data: 'title' },
-                    { name: 'Email', data: 'email' },
-                    { name: 'Words', data: 'words' },
-                    { name: 'Attachment', data: 'attachment' },
-                    { name: 'Post Type', data: 'post_type' },
-                    { name: 'Post Day', data: 'post_day' },
-                    { name: 'Post Author Gender', data: 'post_author_gender' },
-                    { name: 'Private Post', data: 'private_post' },
-                    { name: 'Is Published', data: 'is_published' },
-                    { name: 'Body', data: 'body' }
+                    $DATATABLE_COLUMNS$
                 ]
             });
         });
