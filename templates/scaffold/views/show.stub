@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
     @include('$ROUTES_AS_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.show_fields')
-</div>
 @endsection
