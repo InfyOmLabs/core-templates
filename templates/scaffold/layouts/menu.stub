@@ -1,12 +1,3 @@
-<li>
-    <a href="{{url('/people')}}" class="active">people</a>
-</li>
-<li>
-    <a href="{{url('/posts')}}">Posts</a>
-</li>
-<li>
-    <a href="{{route('prices.index')}}">Prices</a>
-</li>
 
 
 
