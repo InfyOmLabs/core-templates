@@ -79,17 +79,6 @@
 <script src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
 
 <script>
-    $(function () {
-
-        $('#sidebar-wrapper ul li a').filter(function () {
-            return this.href == location.href
-        }).parent().addClass('active').siblings().removeClass('active')
-
-        $('#sidebar-wrapper ul li a').click(function () {
-
-            $(this).parent().addClass('active').siblings().removeClass('active')
-        });
-    });
 
     $("#menu-toggle").click(function (e) {
         e.preventDefault();
