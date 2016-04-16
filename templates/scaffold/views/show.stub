@@ -2,4 +2,8 @@
 
 @section('content')
     @include('$ROUTES_AS_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.show_fields')
+
+    <div class="form-group">
+           <a href="{!! route('$ROUTES_AS_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}" class="btn btn-default">Back</a>
+    </div>
 @endsection
