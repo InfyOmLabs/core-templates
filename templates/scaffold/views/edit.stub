@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('$ROUTES_AS_PREFIX$layouts.app')
 
 @section('content')
         <div class="row">
