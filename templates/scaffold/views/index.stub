@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('$ROUTES_AS_PREFIX$layouts.app')
 
 @section('content')
         <h1 class="pull-left">$MODEL_NAME_PLURAL$</h1>
