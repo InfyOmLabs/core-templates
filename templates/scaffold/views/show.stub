@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('$ROUTES_AS_PREFIX$layouts.app')
 
 @section('content')
     @include('$ROUTES_AS_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.show_fields')
