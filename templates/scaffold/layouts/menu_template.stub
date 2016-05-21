@@ -1,3 +1,3 @@
 <li class="{{ Request::is('$MODEL_NAME_PLURAL_CAMEL$*') ? 'active' : '' }}">
-    <a href="{!! route('$ROUTES_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}">$MODEL_NAME_PLURAL$</a>
+    <a href="{!! route('$ROUTE_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}">$MODEL_NAME_PLURAL$</a>
 </li>
