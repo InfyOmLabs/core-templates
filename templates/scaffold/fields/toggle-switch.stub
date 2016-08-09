@@ -1,8 +1,0 @@
-<!-- bootstrap / Toggle Switch $FIELD_NAME_TITLE$ Field -->
-<div class="form-group col-sm-2">
-    {!! Form::label('$FIELD_NAME$', '$FIELD_NAME_TITLE$:') !!} <br>
-    <label class="checkbox-inline">
-     {!! Form::checkbox('$FIELD_NAME$', 1, true,  ['data-toggle' => 'toggle', 'data-size' => 'small', 'data-onstyle'=>'success', 'data-offstyle' => 'danger', 'data-on' => '<i class="fa fa-check"></i> ON' , 'data-off' => '<i class="fa fa-times"></i> Off']); !!}
-        {{-- See docs for available options --}}
-    </label>
-</div>
