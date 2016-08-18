@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-        <h1 class="pull-left">$MODEL_NAME_PLURAL$</h1>
+        <h1 class="pull-left">$MODEL_NAME_PLURAL_HUMAN$</h1>
         <a class="btn btn-primary pull-right" style="margin-top: 25px" href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') !!}">Add New</a>
 
         <div class="clearfix"></div>
@@ -10,6 +10,6 @@
 
         <div class="clearfix"></div>
 
-        @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.table')
+        @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.table')
         $PAGINATE$
 @endsection
