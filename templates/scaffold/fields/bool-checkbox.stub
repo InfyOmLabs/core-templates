@@ -1,4 +1,4 @@
-<!-- Boolean Checkbox FIELD_NAME_TITLE$ Field checked by default -->
+<!-- Boolean Checkbox $FIELD_NAME_TITLE$ Field checked by default -->
 <div class="form-group col-sm-2">
     <label class="checkbox-inline">
    {!! Form::checkbox('$FIELD_NAME$', $CHECKBOX_VALUE$, ['class' => 'icheckbox_minimal-blue checkbox']) !!} $FIELD_NAME_TITLE$
