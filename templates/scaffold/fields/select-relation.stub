@@ -1,0 +1,9 @@
+<!--  $FIELD_NAME_TITLE$ from $TABLE_NAME$ Field -->
+<div class="form-group col-md-3">
+    {!! Form::label('$FIELD_NAME$', '$FIELD_NAME_TITLE$:') !!}
+    <select class="form-control" name="$TABLE_NAME$[]" id="$TABLE_NAME$">
+        @foreach($TABLE_NAME$ as $MODEL_NAME$)
+            <option value="{{ $MODEL_NAME$->id }}">{{ $MODEL_NAME$->$FIELD_NAME$ }}</option>
+        @endforeach
+    </select>
+</div>
