@@ -1,0 +1,4 @@
+->setColumn('$FIELD_DOT_NOTATION_NAME$', '$FIELD_NAME_TITLE$', [
+        'sortable' => true,
+        'has_filters' => $FIELD_IS_FILLABLE$,
+    ])

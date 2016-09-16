@@ -1,0 +1,23 @@
+<?php
+use PrettyDateTime\PrettyDateTime;
+
+$grid = new \Datagrid($$MODEL_NAME_PLURAL_CAMEL$, Request::get('f', []));
+$grid
+    $SET_COLUMNS$
+    // Setup action column
+    ->setActionColumn([
+        'wrapper' => function ($value, $row) {
+            $out = Form::open(['route' => ['$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.destroy', $row->id], 'method' => 'delete']);
+            $out .= '<div class="btn-group">';
+            $out .= '    <a href="'.route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.show', [$row->id]).'" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-eye-open"></i></a>';
+            $out .= '    <a href="'.route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.edit', [$row->id]).'" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit"></i></a>';
+            $out .= Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]);
+            $out .= '</div>';
+            $out .= Form::close();
+
+            return $out;
+        }
+    ]);
+
+    echo $grid->show();
+?>
