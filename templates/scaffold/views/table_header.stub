@@ -1,1 +1,1 @@
-<th>$FIELD_NAME_TITLE$</th>
+<th scope="col">$FIELD_NAME_TITLE$</th>

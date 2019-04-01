@@ -3,7 +3,7 @@
 @section('content')
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="pull-left">Create New $MODEL_NAME_HUMAN$</h1>
+            <h1 class="float-left">Create New $MODEL_NAME_HUMAN$</h1>
         </div>
     </div>
 

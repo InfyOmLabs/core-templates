@@ -1,15 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-        <h1 class="pull-left">$MODEL_NAME_PLURAL_HUMAN$</h1>
-        <a class="btn btn-primary pull-right" style="margin-top: 25px" href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') !!}">Add New</a>
-
-        <div class="clearfix"></div>
-
-        @include('flash::message')
-
-        <div class="clearfix"></div>
-
-        @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.table')
-        $PAGINATE$
+    <h1>$MODEL_NAME_PLURAL_HUMAN$
+     <a class="btn btn-primary float-right" href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') !!}">Add New</a>
+    </h1>
+    <div class="row">
+        <div class="col-12">
+            @include('flash::message')
+            <div class="clearfix"></div>
+            @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.table')
+        </div>
+    </div>
 @endsection
