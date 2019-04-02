@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Create New $MODEL_NAME_HUMAN$/h1>
+    <h1>Create New $MODEL_NAME_HUMAN$</h1>
     @include('core-templates::common.errors')
 
     {!! Form::open(['route' => '$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.store']) !!}
