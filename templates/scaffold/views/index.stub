@@ -10,5 +10,8 @@
             <div class="clearfix"></div>
             @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.table')
         </div>
+        <div class="col-12 float-left">
+                $PAGINATE$
+        </div>
     </div>
 @endsection

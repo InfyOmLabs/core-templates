@@ -11,7 +11,9 @@
                useCurrent: true,
                icons: {
                    up: "fa fa-arrow-up",
-                   down: "fa fa-arrow-down"
+                   down: "fa fa-arrow-down",
+                   next:"fa fa-arrow-right",
+                   previous:"fa fa-arrow-left"
                },
                sideBySide: true
            })
