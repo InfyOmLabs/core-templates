@@ -4,6 +4,6 @@
     @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.show_fields')
 
     <div class="form-group">
-           <a href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}" class="btn btn-default">Back</a>
+           <a href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}" class="btn btn-light">Back</a>
     </div>
 @endsection

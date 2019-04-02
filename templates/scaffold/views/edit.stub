@@ -1,19 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-        <div class="row">
-            <div class="col-sm-12">
-                <h1 class="pull-left">Edit $MODEL_NAME_HUMAN$</h1>
-            </div>
-        </div>
+        <h1>Edit $MODEL_NAME_HUMAN$</h1>
 
         @include('core-templates::common.errors')
 
-        <div class="row">
-            {!! Form::model($$MODEL_NAME_CAMEL$, ['route' => ['$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.update', $$MODEL_NAME_CAMEL$->$PRIMARY_KEY_NAME$], 'method' => 'patch']) !!}
-
-            @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.fields')
-
-            {!! Form::close() !!}
-        </div>
+        {!! Form::model($$MODEL_NAME_CAMEL$, ['route' => ['$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.update', $$MODEL_NAME_CAMEL$->$PRIMARY_KEY_NAME$], 'method' => 'patch']) !!}
+            <div class="row">
+                @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.fields')
+             </div>
+        {!! Form::close() !!}
 @endsection
