@@ -366,7 +366,7 @@ body {
 }
 
 .page-wrapper .page-content > div {
-    padding: 20px 40px;
+    padding: 20px 40px 20px 0px;
 }
 
 .page-wrapper .page-content {
@@ -499,4 +499,12 @@ body {
 
 .help-block {
     color: red;
+}
+
+.page-body {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),
+    0 2px 4px 0 rgba(0,0,0,0.08);
+    padding: 20px 30px;
+    min-height: 500px;
+    background: #fff;
 }

@@ -33,7 +33,9 @@
             <!-- page-content" -->
             <main class="page-content">
                 <div class="container-fluid">
-                    @yield('content')
+                    <div class="page-body">
+                        @yield('content')
+                    </div>
                 </div>
 
             </main>
@@ -51,9 +53,10 @@
             <!-- page-content" -->
             <main class="page-content">
                 <div class="container-fluid">
-                    @yield('content')
+                    <div class="page-body">
+                        @yield('content')
+                    </div>
                 </div>
-
             </main>
             <!-- page-content" -->
         </div>
@@ -63,9 +66,10 @@
         <!-- page-content" -->
         <main class="page-content">
             <div class="container-fluid">
-                @yield('content')
+                <div class="page-body">
+                    @yield('content')
+                </div>
             </div>
-
         </main>
         <!-- page-content" -->
     </div>
